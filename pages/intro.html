@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README.md</title>
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+    <style>
+        /* Semantic CSS Custom Element */
+        stats-card {
+            display: block;
+            border: 3px solid blue;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <hello-world></hello-world>
+
+    <article>
+        <section>
+            <h2>Hi! You have reached my portfolio website</h2>
+            <p>
+                I'm <strong>Phyo Thant</strong>. You can call me <b>Patrick</b>. <br>
+                I am a passionate problem-solver with expertise in 
+                <em>Backend Development</em>, <em>Network System</em>, and <em>Robotics</em>.
+            </p>
+            <p>
+                My development philosophy focuses on writing 
+                <span id="rotate-word">clean unbreakable maintainable</span> code, and
+                user-centered design. <br>
+                I am in pursuit of <b>continuous learning</b>, and 
+                evolving through <i>modern development practices</i>. 
+            </p>
+        </section>
+
+        <stats-card>
+            <h4>Stats</h4>
+            <ul>
+                <li>3+ Years Experience</li>
+                <li>7+ Projects Completed</li>
+                <li>60+ leetCode Solved</li>
+                <svg width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="green"/>
+                </svg>
+            </ul>
+        </stats-card>
+
+        <p>
+            Feel free to click around to learn more about me
+        </p>
+
+    </article>
+    <footer>
+            <p>
+                <small>Last updated: <time datetime="2025-10">October 2025</time></small>
+            </p>
+    </footer>
+</body>
+</html>

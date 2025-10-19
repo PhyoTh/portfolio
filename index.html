@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyo Thant's Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <style>
+        iframe {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <p>JavaScript is disabled. Some features may not work properly</p>
+    </noscript>
+    
+    <header>
+        <h1>Phyo Thant</h1>
+        <!-- Sidebar/File Explorer -->
+        <nav>
+            <ul>
+                <li><a href="pages/intro.html" target="content-frame">README.md</a></li>
+                <li><a href="pages/about.html" target="content-frame">about.json</a></li>
+                <li><a href="pages/experiences.html" target="content-frame">experiences.log</a></li>
+                <li><a href="pages/projects.html" target="content-frame">projects.ipynb</a></li>
+                <li><a href="pages/contact.html" target="content-frame">contact.html</a></li>
+                <li><a href="experiments.html" target="content-frame">Here is experiments section</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <iframe
+            name="content-frame"
+            src="pages/intro.html"
+            title="README.md"
+            width="100%"
+            height="600">
+        </iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Phyo Thant</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+</head>
+<body>
+    <h1>HTML Tag Experiments</h1>
+
+    <section>
+        <h2>MathML Demo (Extra Credit)</h2>
+        <math display="block">
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </math>
+        <p>Where E is energy, m is mass, and c is the speed of light.</p>
+
+        <h3>Why MathML took so long to be usable:</h3>
+        <p>
+            Even though MathML has been included in the HTML5 specification for quite some time, 
+            it hasn't really been practical to use until recently because many browsers didn't support it,
+            especially the Chromium-based ones like Chrome, Edge, and Opera. 
+            While Firefox and Safari had offered support for MathML for years, 
+            it wasn't until January 2023, with the release of version 109, 
+            that Chrome finally added native support for it.
+        </p>
+    </section>
+
+    <!-- Picture -->
+    <section>
+        <h2>Picture Element Demo</h2>
+        <picture>
+            <source type="image/avif" srcset="assets/avif/geisel.avif">
+            <source type="image/webp" srcset="assets/webp/geisel.webp">
+            <img src="assets/jpg/geisel.jpg" alt="Geisel Library">
+        </picture>
+    </section>
+
+    <!-- Audio -->
+    <section>
+        <h2>Audio Element Demo</h2>
+        <audio controls>
+            <source type="audio/mpeg" src="assets/mp3/its-me-mario.mp3">
+            Your browser does not support the audio mp3 file.
+        </audio>
+    </section>
+
+    <!-- Video -->
+    <section>
+        <h2>Video Element Demo</h2>
+        <video width="320" height="240" controls>
+            <source type="video/mp4" src="assets/mp4/kirby-falling.mp4" >
+            Your browser does not support the video mp4 file.
+        </video>
+    </section>
+
+    <!-- Canvas -->
+    <section>
+        <h2>Canvas Element Demo</h2>
+        <canvas id="myCanvas" width="200" height="100">
+            Your browser does not support the HTML canvas element.
+        </canvas>
+        <script>
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillRect(10, 10, 180, 80);
+            ctx.fillStyle = 'white';
+            ctx.font = '20px Arial';
+            ctx.fillText('Canvas Demo', 35, 55);
+        </script>
+    </section>
+
+        
+    <!-- Template -->
+    <section>
+        <template>
+            <p>You just got sandwiched</p>
+        </template>
+
+        <!-- <button onclick="showContent()">Click here to get sandwiched</button>
+        <script>
+            function showContent() {
+            let temp = document.getElementsByTagName("template")[0];
+            let clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+            }   
+        </script> -->
+    </section>
+</body>
+</html>
